@@ -1,0 +1,211 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+body {
+    position: relative;
+    font-family: 微软雅黑,serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    min-height: 550px;
+    min-width: 1000px;
+}
+
+
+.mask {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -10;
+    background-color: #000;
+    background-image: url(素材/bg.jpg);
+    background-position: center 0;/*居中*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.blue-btn {
+    box-sizing: content-box;
+    display: inline-block;
+    border: none;
+    background: #3a8cfb;
+    color: #fff;
+    text-decoration: none;
+    padding:0 14px;
+    font-size: 13px;
+    float: right;/*向右浮动*/
+}
+
+.a-link {
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+}
+
+.a-link.bold {
+    font-weight: bold;
+}
+
+.white-word {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.green-word {
+    color: cornflowerblue;
+    font-weight: bold;/*加粗*/
+}
+
+.show-vertical {
+    margin-right: 11px;/*右边距*/
+}
+
+/*header*/
+.header {
+    position: relative;
+    background: #82766a;
+    padding-left: 12px;/*设置左内边距：*/
+    text-align: left;
+    line-height: 32px;/*设置以百分比计的行高：*/
+    height: 32px;/*高度*/
+    font-size: 15px;
+
+}
+
+.weather-wrap {
+    display: inline-block;/*使元素生成行内框 默认值 此元素将显示为块级元素，此元素前后会带有换行符。*/
+    box-sizing: content-box;/*规定两个并排的带边框的框：*/
+    line-height: 32px;
+    height: 32px;
+    float: left;
+}
+
+.weather-wrap img {
+    margin-right: 2px;/*右边距*/
+    margin-bottom: -5px;/*下外边距*/
+}
+
+.weather-wrap .white-word {
+    margin-right: 4px;
+}
+
+.special-wrap {
+    box-sizing: content-box;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+}
+
+.special-wrap.a-link {
+    padding-right: 13px;/*设置右内边距：*/
+}
+.header-right-wrap {
+    float: right;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+}
+.header-right-wrap.a-link {
+    margin-right: 14px;/*外右边距*/
+}
+
+/*main-content*/
+.main-content {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+    min-height: 293px;/*设置最小高度：*/
+}
+.form-box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-box .show-logo img {
+    height: 129px;
+    width: 270px;
+}
+.form-box .show-search-input {
+    width: 640px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.form-box .show-search-input input {
+    display: inline-block;
+    float: left;
+    height: 20px;/*!important*/
+    width: 540px;
+    border: none;
+    padding: 10px 0 10px 7px;
+}
+
+.form-box .show-search-input button {
+    margin-left: -7px;
+    display: inline-block;
+    border: none;
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*底部*/
+.footer {
+    width: 100%; 
+    position: absolute;/*置底*/
+    z-index: 3;
+    bottom: 12px;
+    left: 0;
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+}
+
+.footer-first-wrap {
+    height: 17.2px;
+    line-height: 17.2px;/*百分比计行高*/
+    text-align: center;
+    margin: 0;
+}
+
+.footer img {
+    margin-bottom: -2px;
+    height: 16px;
+    width: 14px;
+}
+
+.footer .footer-second-wrap {
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.footer-second-wrap a.white-word span:hover {
+    text-decoration: underline;
+}
+
+
+
+
